@@ -2,9 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', Verdana, sans-serif;
+    color: white;
 }
 
 img{
     width: 3rem;
     height: auto;  
+}
+
+body{
+    background-image: url("./imgs/Img2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 4rem;
 }
