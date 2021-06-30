@@ -1,17 +1,24 @@
-*{
+:root {
+    --white: white;
+    --black: black;
+    --windows-blue: #00adef;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', Verdana, sans-serif;
-    color: white;
+    color: var(--white);
 }
 
-img, svg{
+img,
+svg {
     width: 2.5rem;
     height: auto;
 }
 
-body{
+body {
     position: relative;
     background-image: url("./imgs/Img2.jpg");
     background-size: cover;
@@ -20,26 +27,30 @@ body{
     height: 100vh;
     width: 100%;
 }
-div{
+
+div {
     display: flex;
     width: 6rem;
     margin-bottom: 1.5rem;
     margin-left: 0.5rem;
     justify-content: center;
 }
-div > a{
+
+div>a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-div .link-to-page > p{
+
+div .link-to-page>p {
     width: 100%;
     display: inline-block;
     text-align: center;
     font-size: 1rem;
 }
-.expand-apps{
+
+.expand-apps {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -47,26 +58,90 @@ div .link-to-page > p{
 
 /* task bar */
 
-footer{
+footer {
     display: grid;
-    grid-template-columns: minmax(2rem, 4rem);
+    grid-template-columns: minmax(2rem, 4rem) 22rem;
     grid-template-rows: auto;
     align-items: center;
     justify-items: center;
     grid-auto-flow: column;
     position: absolute;
     width: 100%;
-    min-height: 3rem;
-    opacity: 0.75;
+    min-height: 2.5rem;
+    opacity: 0.9;
     bottom: 0;
     background: linear-gradient(to bottom right, #121213, #232325);
 }
 
-footer svg{
-    transition: all 0.3s ease-in;
-    fill: white;
-    cursor: pointer;
+footer svg {
+    fill: var(--white);
 }
-footer svg:hover{
-    fill: #00adef;
+
+footer .windows-hover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer #windows-icon {
+    width: 1.5rem;
+}
+
+footer .windows-hover:hover #windows-icon {
+    fill: var(--windows-blue);
+}
+
+footer label {
+    position: absolute;
+    visibility: hidden;
+}
+
+.search-apps {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 3rem;
+}
+
+.search-apps ::placeholder {
+    color: var(--black);
+    opacity: 1;
+}
+
+.search-apps input[type="text"] {
+    min-width: 100%;
+    font-size: 1rem;
+    height: auto;
+    color: var(--black);
+    padding: 1rem;
+    max-width: 21rem;
+    padding-left: 3.5rem;
+}
+
+.search-apps img {
+    width: 1.5rem;
+    height: auto;
+    position: absolute;
+    top: 0.7rem;
+    left: 1rem;
+    bottom: 1rem;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+footer .taskbar-hover {
+    transition: 0.15s all ease-in;
+}
+
+footer .taskbar-hover:hover {
+    background-color: #414141;
+}
+
+footer #cortana {
+    width: 1.4rem;
+    height: auto;
+    justify-self: start;
+    margin-left: 0.7rem;
 }
