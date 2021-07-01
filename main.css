@@ -27,8 +27,13 @@ body {
     height: 100vh;
     width: 100%;
 }
+.expand-apps {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
 
-div {
+.expand-apps div {
     display: flex;
     width: 6rem;
     margin-bottom: 1.5rem;
@@ -36,31 +41,26 @@ div {
     justify-content: center;
 }
 
-div>a {
+.expand-apps div>a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-div .link-to-page>p {
+.expand-apps div .link-to-page>p {
     width: 100%;
     display: inline-block;
     text-align: center;
     font-size: 1rem;
 }
 
-.expand-apps {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-}
 
 /* task bar */
 
 footer {
     display: grid;
-    grid-template-columns: minmax(2rem, 4rem) 22rem;
+    grid-template-columns: minmax(2rem, 4rem) 22rem 4rem auto auto;
     grid-template-rows: auto;
     align-items: center;
     justify-items: center;
@@ -132,7 +132,7 @@ footer label {
 }
 
 footer .taskbar-hover {
-    transition: 0.15s all ease-in;
+    transition: 0.11s all ease-in;
 }
 
 footer .taskbar-hover:hover {
@@ -144,4 +144,27 @@ footer #cortana {
     height: auto;
     justify-self: start;
     margin-left: 0.7rem;
+}
+/* pinned apps on footer */
+footer .pinned-apps{
+    justify-self: start;
+    width: auto;
+    grid-template-rows: minmax(1rem, 3rem);
+    height: 100%;
+    align-content: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0rem;
+}
+footer .pinned-apps img{
+    width: 1.7rem;
+}
+footer .weather-update{
+}
+footer .taskbar-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 3.5rem;
 }
