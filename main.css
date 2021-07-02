@@ -1,6 +1,7 @@
 :root {
     --white: white;
     --black: black;
+    --lightgrey: #323232e7;
     --windows-blue: #00adef;
 }
 
@@ -60,7 +61,7 @@ body {
 
 footer {
     display: grid;
-    grid-template-columns: minmax(2rem, 4rem) 22rem 4rem auto auto;
+    grid-template-columns: minmax(2rem, 4rem) 22rem 4rem auto 4rem;
     grid-template-rows: auto;
     align-items: center;
     justify-items: center;
@@ -131,11 +132,11 @@ footer label {
     transform: scaleX(-1);
 }
 
-footer .taskbar-hover {
+.taskbar-hover {
     transition: 0.11s all ease-in;
 }
 
-footer .taskbar-hover:hover {
+.taskbar-hover:hover {
     background-color: #414141;
 }
 
@@ -160,6 +161,10 @@ footer .pinned-apps img{
     width: 1.7rem;
 }
 footer .weather-update{
+    width: 3.5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
 }
 footer .taskbar-app{
     display: flex;
@@ -167,4 +172,39 @@ footer .taskbar-app{
     align-items: center;
     height: auto;
     width: 3.5rem;
+}
+footer .other-apps{
+    display: none;
+    position: absolute;
+}
+#expand-other-apps{
+    display: flex;
+    justify-content: center;
+    width: 2.5rem;
+    height: 3rem;
+}
+#expand-other-apps img{
+    width: 1rem;
+    transform: rotate(270deg);
+}
+#expand-other-apps:checked ~ .other-apps{
+    display: grid;
+    top: 1rem;
+    background-color: var(--lightgrey);
+}
+.small-taskbar-info{
+    display: grid;
+    width: 84%;
+    grid-template-columns: minmax(auto, 2.5rem) auto;
+    grid-auto-flow: column;
+}
+.small-taskbar-info .shown-apps{
+    width: 94%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.small-taskbar-info .shown-apps img{
+    width: 2rem;
+    margin-right: 1rem;
 }
