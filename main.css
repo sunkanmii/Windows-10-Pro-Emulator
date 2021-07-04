@@ -21,12 +21,31 @@ svg {
 
 body {
     position: relative;
-    background-image: url("./imgs/Img2.jpg");
+    background-image: url("./imgs/slideshow/Img2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    animation: 46s ease-in infinite change-background;
+}
+@keyframes change-background {
+    0%, 30%{
+        background-image: url("./imgs/slideshow/Img2.jpg");
+    }
+    35%, 65%{
+        background-image: url("./imgs/slideshow/Img4.jpg");
+    }
+    70%, 95%{
+        background-image: url("./imgs/slideshow/Img6.jpg");
+    }
+    100%{
+        background-image: url("./imgs/slideshow/Img2.jpg");
+    }
+}
+body > *{
+    position: relative;
+    z-index: 3;
 }
 .expand-apps {
     display: grid;
@@ -61,7 +80,7 @@ body {
 
 footer {
     display: grid;
-    grid-template-columns: minmax(2rem, 4rem) 22rem 4rem auto 4rem;
+    grid-template-columns: minmax(2rem, 4rem) 22rem 3rem auto 4rem minmax(auto, 18rem);
     grid-template-rows: auto;
     align-items: center;
     justify-items: center;
@@ -93,6 +112,11 @@ footer .windows-hover:hover #windows-icon {
     fill: var(--windows-blue);
 }
 
+footer .open-windows-menu{
+    display: none;
+}
+
+/* Search panel */
 footer label {
     position: absolute;
     visibility: hidden;
@@ -140,11 +164,15 @@ footer label {
     background-color: #414141;
 }
 
-footer #cortana {
-    width: 1.4rem;
-    height: auto;
+footer .cortana-section {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
     justify-self: start;
-    margin-left: 0.7rem;
+}
+footer .cortana-section #cortana{
+    width: 1.4rem;
 }
 /* pinned apps on footer */
 footer .pinned-apps{
@@ -184,7 +212,7 @@ footer .other-apps{
     height: 3rem;
 }
 #expand-other-apps img{
-    width: 1rem;
+    width: 0.9rem;
     transform: rotate(270deg);
 }
 #expand-other-apps:checked ~ .other-apps{
@@ -194,17 +222,66 @@ footer .other-apps{
 }
 .small-taskbar-info{
     display: grid;
-    width: 84%;
-    grid-template-columns: minmax(auto, 2.5rem) auto;
+    width: 100%;
+    grid-template-columns: minmax(auto, 1.5rem) auto minmax(auto,7rem) minmax(auto, 3rem) minmax(auto, 0.4rem);
     grid-auto-flow: column;
 }
 .small-taskbar-info .shown-apps{
-    width: 94%;
-    align-items: center;
+    width: 100%;
+    text-align: center;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
-.small-taskbar-info .shown-apps img{
+.small-taskbar-info .shown-apps .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2rem;
-    margin-right: 1rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+}
+.small-taskbar-info .shown-apps img{
+    width: 1.2rem;
+}
+.small-taskbar-info .shown-apps .image-container:nth-child(1){
+    margin-left: 0;
+    transform: scaleX(-1);
+}
+.small-taskbar-info .shown-apps .image-container:nth-child(2) img{
+    transform: scaleX(-1);
+    width: 0.9rem;
+}
+footer .date-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer .date-section time{
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+footer .notifications-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-right: 0.2rem;
+    height: 3rem;
+}
+footer .notifications-bar img{
+    width: 1.8rem;
+}
+footer .show-desktop{
+    width: 100%;
+    height: 3rem;
+}
+footer .show-desktop hr{
+    width: 0.03rem;
+    height: 100%;
+    background-color: rgba(206, 206, 206, 0.721);
+    border: none;
 }
