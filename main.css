@@ -61,7 +61,7 @@ ul{
     z-index: 5;
     transition: 0.3s all ease;
     top: 0rem;
-    background-color:white;
+    background-color:var(--white);
     display: none;
     justify-content: center;
     min-width: 5rem;
@@ -98,7 +98,7 @@ ul{
 .expand-apps {
     display: grid;
     grid-template-columns: repeat(10, 6rem);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 6rem);
     grid-auto-flow: column;
     overflow: hidden;
 }
@@ -163,9 +163,16 @@ footer #windows-icon {
 footer .windows-hover:hover #windows-icon {
     fill: var(--windows-blue);
 }
-
+/* Windows menu */
 footer .open-windows-menu{
     display: none;
+    width: 33rem;
+    min-height: 36rem;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 8;
+    left: 0;
+    background-color: black;
 }
 
 /* Search panel */

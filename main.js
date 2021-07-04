@@ -29,13 +29,46 @@ createNew.addEventListener('click', (event) => {
 function createTextfile(){
     let appHeader = document.querySelector('.expand-apps');
     let fileNum = appHeader.children.length > 5 ? appHeader.children.length - 4 : 1;
+    let id = 0;
+    let items = appHeader.children;
+    let itemsArr = [...items];
+    itemsArr.sort(function(a, b){
+        return a.getAttribute('id') == b.getAttribute('id')
+        ? 0
+        : (a.getAttribute('id') > b.getAttribute('id') ? 1 : -1);
+    });
+
+    for (let i = 0; i < itemsArr.length; i++) {
+        if(itemsArr[i].getAttribute('id') != String(i+1)){
+            id = i+1;
+            break;
+        }
+        else{
+            id = itemsArr.length + 1;
+            break;
+        }
+    }
+    
     let div = document.createElement('div');
     div.setAttribute('draggable', 'true');
+    div.setAttribute('ondragstart', 'drag(event)');
+    div.setAttribute('id', id);
+    div.addEventListener( "dragstart" , function(e){
+        drag(e);
+    });
+    div.addEventListener('dragend', function(e){
+        drag(e);
+    }, false)
 
     let anchor = document.createElement('a');
     anchor.setAttribute('class', 'link-to-page taskbar-hover');
-    
+    anchor.addEventListener("dragstart", (e) => {
+        e.preventDefault();
+    })
     let img = document.createElement("img");
+    img.addEventListener("dragstart", (e) => {
+        e.preventDefault();
+    })
     img.setAttribute('src', './imgs/file.svg');
     img.setAttribute('alt', 'file');
     anchor.appendChild(img);
@@ -87,3 +120,14 @@ setTimeout(function() {
     setInterval(addDateToDOM, 60000);
     addDateToDOM();
 }, toExactMinute);
+
+function openMenu(){
+    let windowsMenu = document.querySelector(".open-windows-menu");
+
+    if(windowsMenu.getAttribute("style") == null){
+        windowsMenu.setAttribute('style', 'display: flex; transition: all 0.2s ease-in')
+    }
+    else{
+        windowsMenu.removeAttribute("style");
+    }
+}

@@ -14,7 +14,6 @@
 
 <body>
     <article class="fill-if-mobile">
-
     </article>
     <section class="options">
         <ul class="view-options-list">
@@ -28,35 +27,35 @@
         <article class="taskbar">
 
             <section class="expand-apps">
-                <div ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <a class="link-to-page taskbar-hover">
                         <img src="./imgs/[removal.ai]_tmp-60d72cc48e6d1_EUZTXT.png" alt="recycle bin" />
                         <p>Recycle bin</p>
                     </a>
                 </div>
 
-                <div draggable="true">
+                <div id="2" draggable="true" ondragstart="drag(event)">
                     <a class="link-to-page taskbar-hover">
                         <img src="./imgs/brand-icon.png" alt="hashnode logo" />
                         <p>Hashnode</p>
                     </a>
                 </div>
 
-                <div draggable="true">
+                <div id="3" draggable="true" ondragstart="drag(event)">
                     <a class="link-to-page taskbar-hover">
                         <img src="./imgs/edge.svg" alt="edge logo" />
                         <p>Microsoft Edge</p>
                     </a>
                 </div>
 
-                <div draggable="true">
+                <div id="4" draggable="true" ondragstart="drag(event)">
                     <a class="link-to-page taskbar-hover">
                         <img src="./imgs/chrome.svg" alt="chrome logo" />
                         <p>Chrome</p>
                     </a>
                 </div>
 
-                <div draggable="true">
+                <div id="5" draggable="true" ondragstart="drag(event)">
                     <a class="link-to-page taskbar-hover">
                         <img src="./imgs/firefox.svg" alt="firefox logo" />
                         <p>Firefox</p>
@@ -67,7 +66,7 @@
     </main>
 
     <footer>
-        <section class="taskbar-hover windows-hover">
+        <section onclick="openMenu()" class="taskbar-hover windows-hover">
             <svg id="windows-icon" viewBox="0 0 150 150" width="150px" height="150px">
                 <g id="surface1062591">
                     <path
@@ -79,32 +78,32 @@
         <article class="open-windows-menu">
             <section class="left-panel">
                 <section class="start">
-                    <img src="" alt="start" />
+                    <img src="./imgs/windows-menu/icons8-menu.svg" alt="start" />
                     <p>Start</p>
                 </section>
 
                 <section class="details">
                     <div class="left-bottom-panel">
-                        <img src="" alt="profile">
+                        <img src="./imgs/windows-menu/me-compressed.jpg" alt="profile">
                         <p>Olasunkanmi Fafowora</p>
                     </div>
                     <div class="left-bottom-panel">
-                        <img src="" alt="documents">
+                        <img src="./imgs/windows-menu/document.svg" alt="documents">
                         <p>Documents</p>
                     </div>
     
                     <div class="left-bottom-panel">
-                        <img src="" alt="pictures">
+                        <img src="./imgs/windows-menu/picture.svg" alt="pictures">
                         <p>Pictures</p>
                     </div>
     
                     <div class="left-bottom-panel">
-                        <img src="" alt="settings">
+                        <img src="./imgs/windows-menu/settings.svg" alt="settings">
                         <p>Settings</p>
                     </div>
     
                     <div class="left-bottom-panel">
-                        <img src="" alt="power">
+                        <img src="./imgs/windows-menu/power-button.svg" alt="power">
                         <p>Power</p>
                     </div>
                 </section>
@@ -159,7 +158,7 @@
                     <img class="taskbar-hover" src="./imgs/wifi-signal.svg" />
                 </div>
                 <div class="image-container taskbar-hover">
-                    <img class="taskbar-hover" src="./imgs/icons8-touchpad-96.png" />
+                    <img class="taskbar-hover" src="./imgs/mouse.svg" />
                 </div>
             </section>
 
@@ -179,6 +178,7 @@
     </footer>
     <script src='main.js'></script>
     <script src='drag-and-drop.js'></script>
+    <script src='indexDB.js'></script>
 </body>
 
 </html>

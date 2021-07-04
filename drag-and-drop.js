@@ -1,14 +1,13 @@
-function allowDrop(ev) {
-    ev.preventDefault();
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drag(event) {
+    event.dataTransfer.setData("text", event.target.id);
 }
 
 function drop(event) {
     event.preventDefault();
-    let data = event.dataTransfer.getData("text");
-    event.target.style.backgroundColor = "goldenrod";
-    event.target.appendChild(document.getElementById(data));
-}
-
-function drag(event) {
-    ev.dataTransfer.setData("text", ev.target.id);
+    let data = document.getElementById(event.dataTransfer.getData("text"));
+    data.parentNode.removeChild(data);
 }
