@@ -14,51 +14,50 @@
 
 <body>
     <article class="fill-if-mobile">
-
     </article>
     <section class="options">
         <ul class="view-options-list">
-            <li class="list-element">New</li>
+            <li class="list-element">New <img src="imgs/right-arrow-new.svg" alt=""></li>
         </ul>
         <ul class="view-options-sublist">
-            <li class="sublist-element" onclick="createTextfile()">Create Note</li>
+            <li class="sublist-element" onclick="createTextfile()">Create New File</li>
         </ul>
     </section>
     <main>
         <article class="taskbar">
 
             <section class="expand-apps">
-                <div ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <a class="link-to-page taskbar-hover">
-                        <img src="./imgs/[removal.ai]_tmp-60d72cc48e6d1_EUZTXT.png" alt="recycle bin" />
+                <div id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <a class="link-to-page">
+                        <img src="./imgs/apps/[removal.ai]_tmp-60d72cc48e6d1_EUZTXT.png" alt="recycle bin" />
                         <p>Recycle bin</p>
                     </a>
                 </div>
 
-                <div draggable="true">
-                    <a class="link-to-page taskbar-hover">
-                        <img src="./imgs/brand-icon.png" alt="hashnode logo" />
+                <div id="2" draggable="true" ondragstart="drag(event)">
+                    <a href="" class="link-to-page">
+                        <img src="./imgs/apps/brand-icon.png" alt="hashnode logo" />
                         <p>Hashnode</p>
                     </a>
                 </div>
 
-                <div draggable="true">
-                    <a class="link-to-page taskbar-hover">
-                        <img src="./imgs/edge.svg" alt="edge logo" />
+                <div id="3" draggable="true" ondragstart="drag(event)">
+                    <a class="link-to-page">
+                        <img src="./imgs/apps/edge.svg" alt="edge logo" />
                         <p>Microsoft Edge</p>
                     </a>
                 </div>
 
-                <div draggable="true">
-                    <a class="link-to-page taskbar-hover">
-                        <img src="./imgs/chrome.svg" alt="chrome logo" />
+                <div id="4" draggable="true" ondragstart="drag(event)">
+                    <a class="link-to-page">
+                        <img src="./imgs/apps/chrome.svg" alt="chrome logo" />
                         <p>Chrome</p>
                     </a>
                 </div>
 
-                <div draggable="true">
-                    <a class="link-to-page taskbar-hover">
-                        <img src="./imgs/firefox.svg" alt="firefox logo" />
+                <div id="5" draggable="true" ondragstart="drag(event)">
+                    <a class="link-to-page">
+                        <img src="./imgs/apps/firefox.svg" alt="firefox logo" />
                         <p>Firefox</p>
                     </a>
                 </div>
@@ -67,7 +66,7 @@
     </main>
 
     <footer>
-        <section class="taskbar-hover windows-hover">
+        <section onclick="openMenu()" class="taskbar-hover windows-hover">
             <svg id="windows-icon" viewBox="0 0 150 150" width="150px" height="150px">
                 <g id="surface1062591">
                     <path
@@ -78,44 +77,44 @@
 
         <article class="open-windows-menu">
             <section class="left-panel">
-                <section class="start">
-                    <img src="" alt="start" />
+                <section class="start left-panel-hover">
+                    <img src="./imgs/windows-menu/icons8-menu.svg" alt="start" />
                     <p>Start</p>
                 </section>
-
                 <section class="details">
-                    <div class="left-bottom-panel">
-                        <img src="" alt="profile">
+                    <section class="left-bottom-panel left-panel-hover">
+                        <img src="./imgs/windows-menu/me-compressed.jpg" alt="profile">
                         <p>Olasunkanmi Fafowora</p>
-                    </div>
-                    <div class="left-bottom-panel">
-                        <img src="" alt="documents">
+                    </section>
+                    <section class="left-bottom-panel left-panel-hover">
+                        <img src="./imgs/windows-menu/document.svg" alt="documents">
                         <p>Documents</p>
-                    </div>
-    
-                    <div class="left-bottom-panel">
-                        <img src="" alt="pictures">
+                    </section>
+
+                    <section class="left-bottom-panel left-panel-hover">
+                        <img src="./imgs/windows-menu/picture.svg" alt="pictures">
                         <p>Pictures</p>
-                    </div>
-    
-                    <div class="left-bottom-panel">
-                        <img src="" alt="settings">
+                    </section>
+
+                    <section class="left-bottom-panel left-panel-hover">
+                        <img src="./imgs/windows-menu/settings.svg" alt="settings">
                         <p>Settings</p>
-                    </div>
-    
-                    <div class="left-bottom-panel">
-                        <img src="" alt="power">
+                    </section>
+
+                    <section class="left-bottom-panel left-panel-hover">
+                        <img src="./imgs/windows-menu/power-button.svg" alt="power">
                         <p>Power</p>
-                    </div>
+                    </section>
                 </section>
             </section>
+
             <section class="middle-panel">
             </section>
-
             <section class="right-panel">
 
             </section>
         </article>
+
         <section class="search-apps">
             <img src="./imgs/icons8-search.svg" alt="search icon" />
             <label for="search-bar">Search bar, type here to search</label>
@@ -127,13 +126,13 @@
 
         <section class="pinned-apps">
             <div class="taskbar-app taskbar-hover">
-                <img src="./imgs/brand-icon.png" alt="hashnode logo" />
+                <img src="./imgs/apps/brand-icon.png" alt="hashnode logo" />
             </div>
             <div class="taskbar-app taskbar-hover">
-                <img src="./imgs/chrome.svg" alt="chrome logo" />
+                <img src="./imgs/apps/chrome.svg" alt="chrome logo" />
             </div>
             <div class="taskbar-app taskbar-hover">
-                <img src="./imgs/firefox.svg" alt="firefox logo" />
+                <img src="./imgs/apps/firefox.svg" alt="firefox logo" />
             </div>
         </section>
 
@@ -152,14 +151,14 @@
             </section>
 
             <section class="shown-apps">
-                <div class="image-container taskbar-hover"> 
+                <div class="image-container taskbar-hover">
                     <img class="taskbar-hover" src="./imgs/battery.svg" />
                 </div>
                 <div class="image-container taskbar-hover">
                     <img class="taskbar-hover" src="./imgs/wifi-signal.svg" />
                 </div>
                 <div class="image-container taskbar-hover">
-                    <img class="taskbar-hover" src="./imgs/icons8-touchpad-96.png" />
+                    <img class="taskbar-hover" src="./imgs/mouse.svg" />
                 </div>
             </section>
 
@@ -169,16 +168,17 @@
             </section>
 
             <section class="notifications-bar taskbar-hover">
-                <img src="./imgs/icons8-topic-push-notification-96.png" alt=""/>
+                <img src="./imgs/icons8-topic-push-notification-96.png" alt="" />
             </section>
 
             <section class="show-desktop taskbar-hover">
-                <hr/>
+                <hr />
             </section>
         </article>
     </footer>
-    <script src='main.js'></script>
-    <script src='drag-and-drop.js'></script>
+    <script src='./js/main.js'></script>
+    <script src='./js/drag-and-drop.js'></script>
+    <script src='./js/indexDB.js'></script>
 </body>
 
 </html>
