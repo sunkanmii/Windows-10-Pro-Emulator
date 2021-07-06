@@ -4,7 +4,9 @@
     --lightgrey: #323232e7;
     --windows-blue: #00adef;
 }
-
+.fill-if-mobile{
+    display: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -450,4 +452,24 @@ footer .show-desktop hr{
     height: 100%;
     background-color: rgba(206, 206, 206, 0.721);
     border: none;
+}
+@media screen and (max-width: 62.3125rem) {
+    main{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .fill-if-mobile{
+        font-size: 3rem;
+        position: relative;
+        display: flex;
+        text-align: center;
+        font-weight: bold;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12rem;
+    }
 }
