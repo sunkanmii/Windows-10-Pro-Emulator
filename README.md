@@ -1,5 +1,7 @@
 # Windows 10 Pro Emulator
 
+![picture alt](https://github.com/sunkanmii/Windows-10-Pro-Emulator/blob/main/imgs/Screenshot%20(245)%20-%20compressed.png "Windows 10 Pro Emulator")
+
 ## Overview
 Hi there. 😊 This is an emulator of the Windows 10 Pro version built using just HTML5, CSS3, and JavaScript (yes, no libraries or frameworks). I decided to build this cause I thought it would be a really good web app project and would help me understand JavsScript concepts more. Feel free to play with it! 😀
 
