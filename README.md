@@ -16,5 +16,5 @@ Background images gotten from Windows 10 Pro, using [Lockscreen as wallpaper](ht
 Svgs and images downloaded from [flaticon](https://www.flaticon.com/), [icon8](https://icons8.com/), and Windows 10 (used the snip & sketch for the recycle bin cause the svg wasn't available online **hides in shame** 😅).
 
 ## Contributing
-Checkout the [contributing guide](https://github.com/sunkanmii/Windows-10-Pro-Emulator/blob/main/CONTRIBUTING.md) if you would like to make contributions.
+Checkout the [contributing guidelines](https://github.com/sunkanmii/Windows-10-Pro-Emulator/blob/main/CONTRIBUTING.md) if you would like to make contributions.
 Thanks for reading! Have a nice day! 💛
