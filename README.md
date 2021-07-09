@@ -15,4 +15,6 @@ Hi there. 😊 This is an emulator of the Windows 10 Pro version built using jus
 Background images gotten from Windows 10 Pro, using [Lockscreen as wallpaper](https://www.microsoft.com/en-us/p/lockscreen-as-wallpaper/9nblggh4wr7c#activetab=pivot:overviewtab) app.
 Svgs and images downloaded from [flaticon](https://www.flaticon.com/), [icon8](https://icons8.com/), and Windows 10 (used the snip & sketch for the recycle bin cause the svg wasn't available online **hides in shame** 😅).
 
+## Contributing
+Checkout the [contributing guide](https://github.com/sunkanmii/Windows-10-Pro-Emulator/blob/main/CONTRIBUTING.md) if you would like to make contributions.
 Thanks for reading! Have a nice day! 💛
