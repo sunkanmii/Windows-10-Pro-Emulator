@@ -6,6 +6,7 @@
 2. Make sure your code lints.
 3. Use consistent code styling.
 4. Issue that pull request!
+5. Add a comment describing what you've done.
 
 ## 🐛 Report bugs using Github's issues
 To submit a bug or an issue, use the github [Issues](https://github.com/sunkanmii/Windows-10-Pro-Emulator/issues) tab to submit one!
