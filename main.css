@@ -235,6 +235,9 @@ footer .open-windows-menu .left-bottom-panel:nth-child(1) img{
 footer .open-windows-menu .left-bottom-panel:nth-child(1) p{
     white-space: nowrap;
 }
+footer .open-windows-menu .left-bottom-panel:nth-child(3) img{
+    transform: scaleX(-1);
+}
 .open-windows-menu .start p, .open-windows-menu .left-bottom-panel p{
     padding-left: 1.5rem;
 }
