@@ -74,7 +74,7 @@ function createTextfile() {
     img.addEventListener("dragstart", (e) => {
         e.preventDefault();
     })
-    img.setAttribute('src', './imgs/file.svg');
+    img.setAttribute('src', './imgs/apps/file.svg');
     img.setAttribute('draggable', 'false');
     img.setAttribute('alt', 'file');
     anchor.appendChild(img);
