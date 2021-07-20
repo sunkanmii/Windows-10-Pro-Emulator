@@ -17,7 +17,7 @@
 
 img,
 svg {
-    width: 2.5rem;
+    width: 2rem;
     height: auto;
 }
 .expand-apps div:nth-child(1) img{
@@ -172,7 +172,7 @@ footer .windows-hover {
 }
 
 footer #windows-icon {
-    width: 1.5rem;
+    width: 1.2rem;
 }
 
 footer .windows-hover:hover #windows-icon {
@@ -223,11 +223,11 @@ footer .open-windows-menu .left-panel:hover{
     width: 100%;
     min-width: 7rem;
     height: 100%;
-    padding-left: 1.3rem;
+    padding-left: 1.5rem;
     align-items: center;
 }
 .open-windows-menu .start img, footer .open-windows-menu .left-bottom-panel img{
-    width: 1.5rem;
+    width: 1rem;
 }
 footer .open-windows-menu .left-bottom-panel:nth-child(1) img{
     border-radius: 50%;
@@ -306,7 +306,7 @@ footer label {
 
 .search-apps input[type="text"] {
     min-width: 100%;
-    font-size: 1rem;
+    font-size: 0.9rem;
     height: auto;
     color: var(--black);
     padding: 1rem;
@@ -315,10 +315,10 @@ footer label {
 }
 
 .search-apps img {
-    width: 1.5rem;
+    width: 1.2rem;
     height: auto;
     position: absolute;
-    top: 0.7rem;
+    top: 1rem;
     left: 1rem;
     bottom: 1rem;
     -webkit-transform: scaleX(-1);
@@ -343,7 +343,7 @@ footer .cortana-section {
     justify-self: start;
 }
 footer .cortana-section #cortana{
-    width: 1.4rem;
+    width: 1.1rem;
 }
 /* pinned apps on footer */
 footer .pinned-apps{
@@ -357,7 +357,7 @@ footer .pinned-apps{
     grid-gap: 0rem;
 }
 footer .pinned-apps img{
-    width: 1.7rem;
+    width: 1.5rem;
 }
 footer .weather-update{
     width: 3.5rem;
@@ -383,7 +383,7 @@ footer .other-apps{
     height: 3rem;
 }
 #expand-other-apps img{
-    width: 0.9rem;
+    width: 0.7rem;
     transform: rotate(270deg);
 }
 #expand-other-apps:checked ~ .other-apps{
@@ -413,7 +413,7 @@ footer .other-apps{
     margin-left: 0.5rem;
 }
 .small-taskbar-info .shown-apps img{
-    width: 1.2rem;
+    width: 1rem;
 }
 .small-taskbar-info .shown-apps .image-container:nth-child(1){
     margin-left: 0;
@@ -421,7 +421,7 @@ footer .other-apps{
 }
 .small-taskbar-info .shown-apps .image-container:nth-child(2) img{
     transform: scaleX(-1);
-    width: 0.9rem;
+    width: 0.8rem;
 }
 footer .date-section{
     display: flex;
@@ -433,7 +433,7 @@ footer .date-section{
 footer .date-section time{
     width: 100%;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 footer .notifications-bar{
     display: flex;
