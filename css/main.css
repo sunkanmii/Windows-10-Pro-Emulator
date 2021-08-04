@@ -25,26 +25,28 @@ svg {
 }
 body {
     position: relative;
-    background-image: url("./imgs/slideshow/Img2.jpg");
+    background-image: url("../imgs/slideshow/Img2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: auto 3rem;
     height: 100vh;
     width: 100%;
     animation: 46s ease-in infinite change-background;
 }
 @keyframes change-background {
     0%, 30%{
-        background-image: url("./imgs/slideshow/Img2.jpg");
+        background-image: url("../imgs/slideshow/Img2.jpg");
     }
     35%, 65%{
-        background-image: url("./imgs/slideshow/Img4.jpg");
+        background-image: url("../imgs/slideshow/Img4.jpg");
     }
     70%, 95%{
-        background-image: url("./imgs/slideshow/Img6.jpg");
+        background-image: url("../imgs/slideshow/Img6.jpg");
     }
     100%{
-        background-image: url("./imgs/slideshow/Img2.jpg");
+        background-image: url("../imgs/slideshow/Img2.jpg");
     }
 }
 body > *{

@@ -1,3 +1,13 @@
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').then(function (registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    });
+}
+
 const main = document.querySelector("main");
 const createNew = document.querySelector(".view-options-list");
 
@@ -195,7 +205,7 @@ function getAllApps() {
             section.appendChild(newSections[indOfSec]);
             indOfSec++;
             article.appendChild(section);
-            if(i == duplicates[indOfDupli] - 1){
+            if (i == duplicates[indOfDupli] - 1) {
                 indOfDupli++;
             }
         }
