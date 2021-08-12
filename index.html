@@ -8,14 +8,22 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="./imgs/logo/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="./imgs/logo/icon-256x256.png" />
+    <link rel="apple-touch-icon" href="./imgs/logo/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="./imgs/logo/icon-512x512.png" />
     <link rel="icon" sizes="512x512" href="./imgs/windows.svg">
+    <meta name="apple-mobile-web-app-status-bar" content="#4a90e2" />
+    <meta name="theme-color" content="#4a90e2" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
 </head>
 
 <body>
     <article class="fill-if-mobile">
-        <p>Only available <span>on PC.</span> 
+        <p>Only available <span>on PC.</span>
             💛</p>
     </article>
     <section class="options">
@@ -45,7 +53,8 @@
                 </div>
 
                 <div id="3" draggable="true" ondragstart="drag(event)">
-                    <a draggable="false" class="link-to-page" href="https://www.microsoft.com/en-us/edge" rel=”noreferrer”>
+                    <a draggable="false" class="link-to-page" href="https://www.microsoft.com/en-us/edge"
+                        rel=”noreferrer”>
                         <img draggable="false" src="./imgs/apps/edge.svg" alt="edge logo" />
                         <p>Microsoft Edge</p>
                     </a>
@@ -59,7 +68,8 @@
                 </div>
 
                 <div id="5" draggable="true" ondragstart="drag(event)">
-                    <a draggable="false" class="link-to-page" href="https://www.mozilla.org/en-US/firefox/new/" rel=”noreferrer”>
+                    <a draggable="false" class="link-to-page" href="https://www.mozilla.org/en-US/firefox/new/"
+                        rel=”noreferrer”>
                         <img draggable="false" src="./imgs/apps/firefox.svg" alt="firefox logo" />
                         <p>Firefox</p>
                     </a>
