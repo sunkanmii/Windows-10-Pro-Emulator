@@ -1,0 +1,33 @@
+{
+    "theme_color": "#4a90e2",
+    "color": "white",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./",
+    "name": "Windows 10 Pro Emulator",
+    "short_name": "W10 Pro Emulator",
+    "description": "Windows 10 Pro Emulator built with HTML5, CSS3, and JavaScript. Feel free to play around with it!",
+    "icons": [
+        {
+            "src": "./imgs/logo/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./imgs/logo/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./imgs/logo/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "./imgs/logo/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

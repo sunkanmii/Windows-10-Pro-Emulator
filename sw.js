@@ -1,6 +1,14 @@
 let CACHE_NAME = 'my-site-cache-v1';
 let urlsToCache = [
     '/',
+    'index.html',
+    'imgs/slideshow/Img2.jpg',
+    'imgs/slideshow/Img4.jpg',
+    'imgs/slideshow/Img6.jpg',
+    'imgs/apps/[removal.ai]_tmp-60d72cc48e6d1_EUZTXT.png',
+    'imgs/apps/brand-icon.png',
+    'imgs/apps/edge.svg',
+    'imgs/apps/chrome.svg',
     'css/main.css',
     'js/main.js',
     'js/drag-and-drop.js'
