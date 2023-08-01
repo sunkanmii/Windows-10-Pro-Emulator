@@ -1,5 +1,8 @@
 # Windows 10 Pro Emulator
 
+## Note
+> This is an open-source project made with HTML, CSS, and JavaScript. This does not in any way represent the exact replica of the Windows 10 Pro Operating system nor is it in any way affiliated with Microsoft or any of Microsoft's products and it should not be confused with any of Microsoft's official products.
+
 ![picture alt](https://github.com/sunkanmii/Windows-10-Pro-Emulator/blob/main/imgs/Screenshot%20(245)%20-%20compressed.png "Windows 10 Pro Emulator")
 
 ## Overview
